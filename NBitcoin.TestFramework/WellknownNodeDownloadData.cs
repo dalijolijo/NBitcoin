@@ -401,6 +401,35 @@ namespace NBitcoin.Tests
 			};
 		}
 
+		public class BitsendNodeDownloadData
+		{
+			public NodeDownloadData v0_14_0 = new NodeDownloadData()
+			{
+				Version = "0.14.0.5",
+				Windows = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/BitSend/releases/download/v{0}/bitsend_windows.zip",
+					Archive = "bitsend_windows.zip",
+					Executable = "bitsend_windows/bitsendd.exe",
+					Hash = "CB956E7148EFDF2D63BDECAA9A695A711D436B519957FA0568886A9A09B067A2"
+				},
+				Linux = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/BitSend/releases/download/v{0}/linux-bitsend.tar.gz",
+					Archive = "linux-bitsend.tar.gz",
+					Executable = "bitsendd",
+					Hash = "4928e643d9d4d6d763fba6b072a93cf10b89f8d050cbb05f12c12b17dc8f2d7f"
+				},
+				Mac = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/BitSend/releases/download/v{0}/bitsend-Qt.dmg",
+					Archive = "bitsend-Qt.dmg",
+					Executable = "bitsendd",
+					Hash = "6616D88A839BA38B43867494EF1253FEF667F12C07F327DB425E4266DD47A3C2"
+				}
+			};
+		}
+
 		public class MonacoinNodeDownloadData
 		{
 			public NodeDownloadData v0_15_1 = new NodeDownloadData()
@@ -559,5 +588,10 @@ namespace NBitcoin.Tests
 		{
 			get; set;
 		} = new BitcoreNodeDownloadData();
+
+		public static BitsendNodeDownloadData Bitsend
+		{
+		get; set;
+		} = new BitsendNodeDownloadData();
 	}
 }
