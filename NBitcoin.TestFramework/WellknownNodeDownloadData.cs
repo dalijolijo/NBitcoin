@@ -456,6 +456,35 @@
 			};
 		}
 
+		public class BitsendNodeDownloadData
+		{
+			public NodeDownloadData v0_14_2 = new NodeDownloadData()
+			{
+				Version = "0.14.2.0.1",
+				Windows = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/BitSend/releases/download/{0}/windows.zip",
+					Archive = "windows.zip",
+					Executable = "bitsendd.exe",
+					Hash = "686db0cfef78b4b672e10148f2032952bcd13bdefee9bd88b31c4ca2a5c951a9"
+				},
+				Linux = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/BitSend/releases/download/{0}/linux.tar.gz",
+					Archive = "linux.tar.gz",
+					Executable = "bitsendd",
+					Hash = "9d974015c999b6fd0c8c9da6dc1e3afa270af3c1976ddc259b57786925575f4b"
+				},
+				Mac = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/BitSend/releases/download/0.14.2.0.0/bitsend-Qt.dmg",
+					Archive = "bitsend-Qt.dmg",
+					Executable = "bitsendd",
+					Hash = "57cad334ba676e1340a228e0c74b85bc068ef0137a7d3c94b0b60ecd15f389e0"
+				}
+			};
+		}
+
 		public class MonacoinNodeDownloadData
 		{
 			public NodeDownloadData v0_15_1 = new NodeDownloadData()
@@ -855,6 +884,11 @@
 		{
 			get; set;
 		} = new ZclassicNodeDownloadData();
+
+		public static BitsendNodeDownloadData Bitsend
+		{
+			get; set;
+		} = new BitsendNodeDownloadData();
 
 		public static ElementsNodeDownloadData Elements
 		{
