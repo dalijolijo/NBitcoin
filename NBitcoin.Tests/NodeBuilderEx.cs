@@ -40,9 +40,14 @@ namespace NBitcoin.Tests
 			//var builder = NodeBuilder.Create(NodeDownloadData.Groestlcoin.v2_16_0, Altcoins.AltNetworkSets.Groestlcoin.Regtest, caller);
 
 			//var builder = NodeBuilder.Create(NodeDownloadData.Mogwai.v0_12_2, Altcoins.AltNetworkSets.Mogwai.Regtest, caller);
+
 			//var builder = NodeBuilder.Create(NodeDownloadData.Bitcoin.v0_16_2, Altcoins.AltNetworkSets.Bitcoin.Regtest, caller);
+
 			//var builder = NodeBuilder.Create(NodeDownloadData.Bitcore.v0_15_1, Altcoins.Bitcore.Instance.Regtest, caller);
-			var builder = NodeBuilder.Create(NodeDownloadData.Bitsend.v0_14_0, Altcoins.Bitsend.Instance.Regtest, caller);
+
+			//var builder = NodeBuilder.Create(NodeDownloadData.Bitsend.v0_14_0, Altcoins.Bitsend.Instance.Regtest, caller);
+
+			var builder = NodeBuilder.Create(NodeDownloadData.Bitcloud.v2_1_0, Altcoins.Bitcloud.Instance.Regtest, caller);
 			
 			return builder;
 		}

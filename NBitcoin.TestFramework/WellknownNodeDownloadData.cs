@@ -430,6 +430,35 @@ namespace NBitcoin.Tests
 			};
 		}
 
+		public class BitcloudNodeDownloadData
+		{
+			public NodeDownloadData v2_1_0 = new NodeDownloadData()
+			{
+				Version = "2.1.0.0",
+				Windows = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/windows.zip",
+					Archive = "windows.zip",
+					Executable = "windows/bitcloudd.exe",
+					Hash = "84159e5de591e415c8523a06108c1701caeffeb02682cc56b0164f0baaeeafdb"
+				},
+				Linux = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/linux.Ubuntu.16.04.LTS-static-libstdc.tar.gz",
+					Archive = "linux.Ubuntu.16.04.LTS-static-libstdc.tar.gz", 
+					Executable = "bitcloudd",
+					Hash = "f1ea62c957ffbd0b2b9af03b02565b80cb1e69e2323b626068f581d6eb677368"
+				},
+				Mac = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/2.0.2.0/bitcloud-qt.dmg",
+					Archive = "bitcloud-qt.dmg",
+					Executable = "bitcloudd",
+					Hash = "6063e092e62247dd44453764338996ba18b843f58da59d4d05f768066167a79d"
+				}
+			};
+		}
+
 		public class MonacoinNodeDownloadData
 		{
 			public NodeDownloadData v0_15_1 = new NodeDownloadData()
@@ -593,5 +622,10 @@ namespace NBitcoin.Tests
 		{
 		get; set;
 		} = new BitsendNodeDownloadData();
+
+		public static BitcloudNodeDownloadData Bitcloud
+		{
+			get; set;
+		} = new BitcloudNodeDownloadData();
 	}
 }

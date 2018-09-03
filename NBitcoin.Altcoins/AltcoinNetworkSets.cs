@@ -22,6 +22,7 @@ namespace NBitcoin.Altcoins
 		public static Bitcoin Bitcoin { get; } = Bitcoin.Instance;
 		public static Bitcore Bitcore { get; } = Bitcore.Instance;
 		public static Bitsend Bitsend { get; } = Bitsend.Instance;
+		public static Bitcloud Bitcloud { get; } = Bitcloud.Instance;
 		public static Groestlcoin Groestlcoin { get; } = Groestlcoin.Instance;
 
 		public static IEnumerable<INetworkSet> GetAll()
@@ -29,6 +30,7 @@ namespace NBitcoin.Altcoins
 			yield return Bitcoin;
 			yield return Bitcore;
 			yield return Bitsend;
+			yield return Bitcloud;
 			yield return Litecoin;
 			yield return Feathercoin;
 			yield return Viacoin;
