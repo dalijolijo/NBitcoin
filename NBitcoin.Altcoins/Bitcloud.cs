@@ -93,7 +93,7 @@ namespace NBitcoin.Altcoins
 				MajorityRejectBlockOutdated = 950,
 				MajorityWindow = 1000, //TODO nToCheckBlockUpgradeMajority = 1000
 				BIP34Hash = new uint256("000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"), //TODO
-				PowLimit = new Target(new uint256("0")), 
+				PowLimit = new Target(new uint256("0000000000000000000000000000000000000000000000000000000000000000")), 
 				PowTargetTimespan = TimeSpan.FromSeconds(1 * 300),
 				PowTargetSpacing = TimeSpan.FromSeconds(1 * 300),
 				PowAllowMinDifficultyBlocks = true,
@@ -139,7 +139,7 @@ namespace NBitcoin.Altcoins
 				MajorityEnforceBlockUpgrade = 51,
 				MajorityRejectBlockOutdated = 75,
 				MajorityWindow = 100, //TODO nToCheckBlockUpgradeMajority = 100;
-				PowLimit = new Target(new uint256("0000012e1b8843ac9ce8c18603658eaf8895f99d3f5e7e1b7b1686f35e3c087a")),
+				PowLimit = new Target(new uint256("0000000000000000000000000000000000000000000000000000000000000000")), //TODO not defined
 				PowTargetTimespan = TimeSpan.FromSeconds(1 * 135),
 				PowTargetSpacing = TimeSpan.FromSeconds(1 * 135),
 				PowAllowMinDifficultyBlocks = true,
@@ -184,7 +184,7 @@ namespace NBitcoin.Altcoins
 				MajorityEnforceBlockUpgrade = 750,
 				MajorityRejectBlockOutdated = 950,
 				MajorityWindow = 1000, //TODO
-				PowLimit = new Target(new uint256("0")),
+				PowLimit = new Target(new uint256("0000000000000000000000000000000000000000000000000000000000000000")),
 				PowTargetTimespan = TimeSpan.FromSeconds(24 * 60 * 60),
 				PowTargetSpacing = TimeSpan.FromSeconds(1 * 60),
 				PowAllowMinDifficultyBlocks = true,

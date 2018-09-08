@@ -47,7 +47,7 @@ namespace NBitcoin.Tests
 
 			//var builder = NodeBuilder.Create(NodeDownloadData.Bitsend.v0_14_0, Altcoins.Bitsend.Instance.Regtest, caller);
 
-			var builder = NodeBuilder.Create(NodeDownloadData.Bitcloud.v2_0_2, Altcoins.Bitcloud.Instance.Regtest, caller);
+			var builder = NodeBuilder.Create(NodeDownloadData.Bitcloud.v2_1_0, Altcoins.Bitcloud.Instance.Regtest, caller);
 			
 			return builder;
 		}

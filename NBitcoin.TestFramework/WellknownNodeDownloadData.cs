@@ -432,26 +432,26 @@ namespace NBitcoin.Tests
 
 		public class BitcloudNodeDownloadData
 		{
-			public NodeDownloadData v2_0_2 = new NodeDownloadData()
+			public NodeDownloadData v2_1_0 = new NodeDownloadData()
 			{
-				Version = "2.0.2.0",
+				Version = "2.1.0.0",
 				Windows = new NodeOSDownloadData()
 				{
 					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/windows.zip",
 					Archive = "windows.zip",
 					Executable = "windows/bitcloudd.exe",
-					Hash = "e446a779c127c450406cd0e8664a833484139985e1f1d944ac9acfd57f0b69ae"
+					Hash = "84159e5de591e415c8523a06108c1701caeffeb02682cc56b0164f0baaeeafdb"
 				},
 				Linux = new NodeOSDownloadData()
 				{
-					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/btdx.2020.linux.1604.x86.tar.gz",
-					Archive = "btdx.2020.linux.1604.x86.tar.gz", 
+					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/linux.Ubuntu.16.04.LTS-static-libstdc.tar.gz",
+					Archive = "linux.Ubuntu.16.04.LTS-static-libstdc.tar.gz", 
 					Executable = "bitcloudd",
-					Hash = "616d43adea7dd0da02d06d7afae5f4d0da8361d785dd200870cb9a3a31f7166b"
+					Hash = "f1ea62c957ffbd0b2b9af03b02565b80cb1e69e2323b626068f581d6eb677368"
 				},
 				Mac = new NodeOSDownloadData()
 				{
-					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/bitcloud-qt.dmg",
+					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/2.0.2.0/bitcloud-qt.dmg",
 					Archive = "bitcloud-qt.dmg",
 					Executable = "bitcloudd",
 					Hash = "6063e092e62247dd44453764338996ba18b843f58da59d4d05f768066167a79d"
