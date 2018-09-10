@@ -444,10 +444,10 @@ namespace NBitcoin.Tests
 				},
 				Linux = new NodeOSDownloadData()
 				{
-					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/linux.Ubuntu.16.04.LTS-static-libstdc.tar.gz",
-					Archive = "linux.Ubuntu.16.04.LTS-static-libstdc.tar.gz", 
+					DownloadLink = "https://github.com/LIMXTEC/Bitcloud/releases/download/{0}/btdx.2100.linux.1604.x86.tar.gz",
+					Archive = "btdx.2100.linux.1604.x86.tar.gz", 
 					Executable = "bitcloudd",
-					Hash = "f1ea62c957ffbd0b2b9af03b02565b80cb1e69e2323b626068f581d6eb677368"
+					Hash = "011839788dfd15646b2e2d94a168c4c86a9d9fa35e70219047943bb7a10e7c15"
 				},
 				Mac = new NodeOSDownloadData()
 				{
