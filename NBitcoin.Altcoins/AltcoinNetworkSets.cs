@@ -22,6 +22,7 @@ namespace NBitcoin.Altcoins
 		public static Ufo Ufo { get; } = Ufo.Instance;
 		public static Bitcoin Bitcoin { get; } = Bitcoin.Instance;
 		public static Bitcore Bitcore { get; } = Bitcore.Instance;
+		public static Bitcloud Bitcloud { get; } = Bitcloud.Instance;
 		public static Groestlcoin Groestlcoin { get; } = Groestlcoin.Instance;
 		public static Zclassic Zclassic { get; } = Zclassic.Instance;
 		public static Colossus Colossus { get; } = Colossus.Instance;
@@ -32,6 +33,7 @@ namespace NBitcoin.Altcoins
 		{
 			yield return Bitcoin;
 			yield return Bitcore;
+			yield return Bitcloud;
 			yield return Litecoin;
 			yield return Feathercoin;
 			yield return Viacoin;
