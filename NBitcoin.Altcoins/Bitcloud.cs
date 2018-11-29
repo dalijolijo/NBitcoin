@@ -77,10 +77,7 @@ namespace NBitcoin.Altcoins
 
 		protected override void PostInit()
 		{
-			//RegisterDefaultCookiePath("Bitcloud", new FolderName() { TestnetFolder = "testnet3" });
-			RegisterDefaultCookiePath(Mainnet, ".cookie");
-                        RegisterDefaultCookiePath(Testnet, "testnet3", ".cookie");
-                        RegisterDefaultCookiePath(Regtest, "regtest", ".cookie");
+			RegisterDefaultCookiePath("Bitcloud");
 		}
 
 		protected override NetworkBuilder CreateMainnet()
